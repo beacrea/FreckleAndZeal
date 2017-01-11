@@ -101,7 +101,7 @@ body, html, .container-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../img/bg_tile0.png') repeat fixed
+    background: url('../img/bg_tile.png') repeat fixed
 }
 
 .container-logo img {

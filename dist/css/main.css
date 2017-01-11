@@ -114,7 +114,7 @@ body, html, .container-logo {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: url('../img/bg_tile0.png') repeat fixed
+    background: url('../img/bg_tile.png') repeat fixed
 }
 
 .container-logo img {
