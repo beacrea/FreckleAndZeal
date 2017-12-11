@@ -118,7 +118,7 @@
 
     mounted () {
       document.addEventListener("touchmove", this.moveSlide)
-      document.addEventListener("touchup", this.endSlide)
+      document.addEventListener("touchend", this.endSlide)
       document.addEventListener("mousemove", this.moveSlide)
       document.addEventListener("mouseup", this.endSlide)
       window.addEventListener("resize", this.resize)
@@ -126,7 +126,7 @@
 
     beforeDestroy () {
       document.removeEventListener("touchmove", this.moveSlide)
-      document.removeEventListener("touchup", this.endSlide)
+      document.removeEventListener("touchend", this.endSlide)
       document.removeEventListener("mousemove", this.moveSlide)
       document.removeEventListener("mouseup", this.endSlide)
       window.removeEventListener("resize", this.resize)
