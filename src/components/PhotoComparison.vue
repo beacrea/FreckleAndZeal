@@ -10,14 +10,12 @@
     <img :src="before" alt="before"
          v-on:mousedown.prevent
          v-bind:style="beforeImgStyle" />
-    <!--<div class="twentytwenty-overlay">
+    <div class="twentytwenty-overlay">
       <div v-if="beforeLabel" class="twentytwenty-before-label">{{beforeLabel}}</div>
       <div v-if="afterLabel" class="twentytwenty-after-label">{{afterLabel}}</div>
-    </div>-->
+    </div>
     <div class="twentytwenty-handle"
          v-bind:style="handleStyle">
-      <!--<div class="twentytwenty-arrow-left"></div>
-      <div class="twentytwenty-arrow-right"></div>-->
     </div>
   </div>
 </template>
@@ -159,7 +157,7 @@
     height: 100%;
     top: 0;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.5);*/
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.5s;
@@ -168,10 +166,10 @@
   .twentytwenty-container .twentytwenty-overlay .twentytwenty-after-label {
     user-select: none;
     position: absolute;
-    font-size: 0.8em;
+    font-size: 1.6rem;
     top: calc(50% - 0.4em - 5px);
     padding: 10px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
   }
   .twentytwenty-container .twentytwenty-overlay .twentytwenty-before-label {

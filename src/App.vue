@@ -4,9 +4,9 @@
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
       <h1>{{ heading }}</h1>
       <h2>{{ subheading }}</h2>
-      <ImgComp before="https://placecage.com/1000/600" after="https://placecage.com/g/1000/600" />
+      <ImgComp before="../static/before_after/example1_before.jpg" after="../static/before_after/example1_after.jpg" beforeLabel="Before" afterLabel="After" />
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
-      <ImgComp before="https://placecage.com/1010/600" after="https://placecage.com/g/1010/600" />
+      <ImgComp before="../static/before_after/example2_before.jpg" after="../static/before_after/example2_after.jpg" beforeLabel="Before" afterLabel="After" />
 
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
 
@@ -35,7 +35,7 @@
 
   #app {
     .container {
-      padding: 2.4rem;
+      padding: 2.4rem 2.4rem 4.8rem;
       flex: 1 auto;
       text-align: center;
       p {
@@ -53,12 +53,8 @@
   @media screen and (min-width: 76.8rem) {
     // Large Screen Rules
     #app {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       .container {
+        margin: 0 auto;
         max-width: 60rem;
       }
     }
