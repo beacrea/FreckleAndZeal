@@ -5,8 +5,9 @@
 
 
 // ------------
-// FONT IMPORTS
+// IMPORTS
 // ------------
+@import "reset";
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Rambla');
 
 
@@ -23,19 +24,20 @@ $color-main_light: #f6f6f6;
 
 
 // ------------
-// HTML/BODY
+// BASICS
 // ------------
+* {
+  box-sizing: border-box;
+}
 html, body {
   background: $color-main_light;
   color: $color-main_dark;
-  font-family: 'Rambla', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
-  padding: 2.4rem;
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
 }
 
 
@@ -43,14 +45,12 @@ html, body {
 // ------------
 // TYPOGRAPHY
 // ------------
-h1, h2 {
-  line-height: 1;
-  margin: 0;
-}
 h1 {
   color: $color-brand_mainColor_base;
   font-size: 11rem;
   margin-bottom: 0.8rem;
+  font-weight: bold;
+  font-family: 'Rambla', serif;
 }
 h2 {
   color: $color-brand_accentA_base;
@@ -58,6 +58,15 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 0.8rem;
 }
+h1 + h2 {
+  margin-bottom: 2.4rem;
+}
 p {
   font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

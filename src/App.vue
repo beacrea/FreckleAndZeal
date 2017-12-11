@@ -27,13 +27,8 @@
   @import "./globalStyles/global";
 
   #app {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .container {
-      max-width: 60rem;
+      padding: 2.4rem;
       flex: 1 auto;
       text-align: center;
       p {
@@ -45,6 +40,20 @@
       height: $size;
       width: $size;
       max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 76.8rem) {
+    // Large Screen Rules
+    #app {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        max-width: 60rem;
+      }
     }
   }
 </style>
