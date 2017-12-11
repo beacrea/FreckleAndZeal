@@ -1,7 +1,60 @@
 /* *************
-BASE STYLES
+*  BASE STYLES
 ************* */
 
+
+
+// ------------
+// FONT IMPORTS
+// ------------
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rambla');
+
+
+
+// ------------
+// COLORS VARS
+// ------------
+$color-brand_mainColor_base: #FE6169;
+$color-brand_mainColor_shade: #C31922;
+$color-brand_accentA_base: #01C5D9;
+$color-main_dark: #031B40;
+$color-main_light: #f6f6f6;
+
+
+
+// ------------
+// HTML/BODY
+// ------------
 html, body {
-  background: pink;
+  background: $color-main_light;
+  color: $color-main_dark;
+  font-family: 'Rambla', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  padding: 2.4rem;
+}
+
+
+
+// ------------
+// TYPOGRAPHY
+// ------------
+h1, h2 {
+  line-height: 1;
+  margin: 0;
+}
+h1 {
+  color: $color-brand_mainColor_base;
+  font-size: 11rem;
+  margin-bottom: 0.8rem;
+}
+h2 {
+  color: $color-brand_accentA_base;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+p {
+  font-size: 1.6rem;
 }

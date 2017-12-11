@@ -1,21 +1,9 @@
 <template>
   <div id="app">
-    <img src="../static/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <h1>{{ heading }}</h1>
+    <h2>{{ subheading }}</h2>
+    <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! pelt around the house and up and down stairs chasing phantoms so find something else more interesting, so put toy mouse in food bowl run out of litter box at full speed.</p>
+    <p>Ignore the squirrels, you'll never catch them anyway attack feet, for always hungry scamper, andmake meme, make cute face inspect anything brought into the house. Attack feet stare out the window hide at bottom of staircase to trip human put toy mouse in food bowl run out of litter box at full speed . My left donut is missing, as is my right kitty power! . Need to chase tail. Intently sniff hand kitty scratches couch bad kitty yet stare at ceiling, chew iPad power cord, for peer out window, chatter at birds, lure them to mouth so scratch the box. Chase dog then run away i like big cats and i can not lie paw at beetle and eat it before it gets away yet have secret plans.Unwrap toilet paper drink water out of the faucet. Damn that dog chew iPad power cord, andhowl uncontrollably for no reason.</p>
   </div>
 </template>
 
@@ -24,7 +12,8 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      heading: 'Hello there!',
+      subheading: 'Welcome to our super cool website'
     }
   }
 }
@@ -35,8 +24,5 @@ export default {
 @import "./globalStyles/global";
 
 #app {
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 </style>
