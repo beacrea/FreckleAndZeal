@@ -7,12 +7,12 @@
       <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, skin  smoothing" />
 
       <h3>The camera is just the beginning.</h3>
-      <p>In today's digital landscape, shooting digital RAWs can bring out the best in photos, often when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds or thousands of shots to pick through and often hours of development. We help you focus on catching those perfect moments and not the quality refinements later on.</p>
+      <p>In today's digital landscape, shooting digital RAWs can bring out the best in photos, often when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds of shots to pick through and hours of refinement. We help you focus on catching those perfect moments and not the development later on.</p>
 
       <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, skin smoothing" />
 
       <h3>An extension of your craft.</h3>
-      <p>Our services extend the capacity of your studio, letting you take on more projects without compromising your quality and turn-around.</p>
+      <p>Our services extend the capacity of your studio, letting you take on more projects while also improving your turn-around without compromising your quality.</p>
     </div>
     <footer>
       <h1>Contact</h1>
@@ -51,6 +51,7 @@
 
   #app {
     background: $color-main_light;
+    margin: 0 auto;
     .container {
       padding: $common_padding $common_padding $common_padding*2;
       flex: 1 auto;

@@ -8,7 +8,7 @@
 // IMPORTS
 // ------------
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=OpenSans|Playfair+Display|Volkhov');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rambla|Volkhov');
 
 
 
@@ -42,7 +42,7 @@ $color-main_font: $color-main_dark;
 html, body {
   color: $color-main_font;
   background-color: $color-brand_mainColor_base;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
@@ -63,7 +63,7 @@ h1 {
   font-size: 6.4rem;
   margin-bottom: 1.6rem;
   font-weight: bold;
-  font-family: 'Playfair+Display', serif;
+  font-family: 'Rambla', serif;
   line-height: 1;
 }
 h2 {
@@ -80,9 +80,9 @@ h1 + h2 {
 h3 {
   color: $color-brand_mainColor_base;
   font-size: 4.8rem;
-  margin: 5.6rem 0 1.6rem;
+  margin: 12rem 0 1.6rem;
   line-height: 1.1;
-  font-family: 'Playfair+Display', serif;
+  font-family: 'Rambla', serif;
 }
 p {
   font-size: 1.6rem;

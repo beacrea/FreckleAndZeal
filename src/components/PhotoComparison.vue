@@ -238,11 +238,12 @@
     border-right: 10px solid white;
   }
   figcaption {
-    margin-top: 0.8rem;
+    margin-top: 1.6rem;
     font-size: 1.6rem;
     font-style: italic;
     font-family: 'Volkhov', Serif;
     color: $color-main_dark;
+    opacity: 0.5;
     line-height: 1.2;
   }
 </style>
