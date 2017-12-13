@@ -8,7 +8,7 @@
 // IMPORTS
 // ------------
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Rambla');
+@import url('https://fonts.googleapis.com/css?family=OpenSans|Playfair+Display|Volkhov');
 
 
 
@@ -16,6 +16,7 @@
 // Helper Vars
 // ------------
 $common_siteMaxWidth: 76.8rem;
+$common_padding: 2.4rem;
 $common_borderRadius: 4px;
 
 
@@ -28,6 +29,7 @@ $color-brand_mainColor_shade: #C31922;
 $color-brand_accentA_base: #01C5D9;
 $color-main_dark: #031B40;
 $color-main_light: #f6f6f6;
+$color-main_font: $color-main_dark;
 
 
 
@@ -38,14 +40,17 @@ $color-main_light: #f6f6f6;
   box-sizing: border-box;
 }
 html, body {
-  background: $color-main_light;
-  color: $color-main_dark;
-  font-family: 'Montserrat', sans-serif;
+  color: $color-main_font;
+  background-color: $color-brand_mainColor_base;
+  font-family: 'OpenSans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
   height: 100%;
   width: 100%;
+}
+body {
+  background-image: url('/static/fz_bgTile0.png');
 }
 
 
@@ -55,19 +60,29 @@ html, body {
 // ------------
 h1 {
   color: $color-brand_mainColor_base;
-  font-size: 5.6rem;
-  margin-bottom: 0.8rem;
+  font-size: 6.4rem;
+  margin-bottom: 1.6rem;
   font-weight: bold;
-  font-family: 'Rambla', serif;
+  font-family: 'Playfair+Display', serif;
+  line-height: 1;
 }
 h2 {
   color: $color-brand_accentA_base;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+  line-height: 1.2;
+  font-weight: 500;
 }
 h1 + h2 {
   margin-bottom: 2.4rem;
+}
+h3 {
+  color: $color-brand_mainColor_base;
+  font-size: 4.8rem;
+  margin: 5.6rem 0 1.6rem;
+  line-height: 1.1;
+  font-family: 'Playfair+Display', serif;
 }
 p {
   font-size: 1.6rem;

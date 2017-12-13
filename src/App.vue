@@ -4,14 +4,19 @@
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
       <h1>{{ heading }}</h1>
       <h2>{{ subheading }}</h2>
-      <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" />
-      <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
-      <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" />
+      <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, skin  smoothing" />
 
-      <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
+      <h3>The camera is just the beginning.</h3>
+      <p>In today's digital landscape, shooting digital RAWs can bring out the best in photos, often when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds or thousands of shots to pick through and often hours of development. We help you focus on catching those perfect moments and not the quality refinements later on.</p>
 
-      <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
+      <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, skin smoothing" />
+
+      <h3>An extension of your craft.</h3>
+      <p>Our services extend the capacity of your studio, letting you take on more projects without compromising your quality and turn-around.</p>
     </div>
+    <footer>
+      <h1>Contact</h1>
+    </footer>
   </div>
 </template>
 
@@ -45,13 +50,11 @@
   @import "./globalStyles/global";
 
   #app {
+    background: $color-main_light;
     .container {
-      padding: 2.4rem 2.4rem 4.8rem;
+      padding: $common_padding $common_padding $common_padding*2;
       flex: 1 auto;
       text-align: center;
-      p {
-        text-align: left;
-      }
     }
     .logo {
       // local vars
@@ -65,8 +68,16 @@
 
     }
     .imgComp {
-      margin-bottom: 1.6rem;
-      box-shadow: 3px 2px 5px rgba(0,0,0,0.1), -3px 2px 6px rgba(0,0,0,0.1);
+      margin: 3.2rem 0;
+    }
+    footer {
+      margin-top: 6.4rem;
+      background: $color-brand_mainColor_base;
+      padding: $common_padding;
+      h1 {
+        color: $color-main_light;
+        text-align: center;
+      }
     }
   }
 

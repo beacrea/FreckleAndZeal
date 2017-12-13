@@ -1,23 +1,28 @@
 <template>
   <!-- from https://github.com/mhayes/vue-twentytwenty -->
-  <div class="twentytwenty-container"
-       v-bind:style="containerStyle"
-       v-on:touchstart="startSlide"
-       v-on:mousedown="startSlide">
-    <img :src="after" alt="after"
-         v-on:mousedown.prevent
-         v-on:load="setDimensions" />
-    <img :src="before" alt="before"
-         v-on:mousedown.prevent
-         v-bind:style="beforeImgStyle" />
-    <div class="twentytwenty-overlay">
-      <div v-if="beforeLabel" class="twentytwenty-before-label">{{beforeLabel}}</div>
-      <div v-if="afterLabel" class="twentytwenty-after-label">{{afterLabel}}</div>
+  <figure>
+    <div class="twentytwenty-container"
+         v-bind:style="containerStyle"
+         v-on:touchstart="startSlide"
+         v-on:mousedown="startSlide">
+      <img :src="after" alt="after"
+           v-on:mousedown.prevent
+           v-on:load="setDimensions" />
+      <img :src="before" alt="before"
+           v-on:mousedown.prevent
+           v-bind:style="beforeImgStyle" />
+      <div class="twentytwenty-overlay">
+        <div v-if="beforeLabel" class="twentytwenty-before-label">{{beforeLabel}}</div>
+        <div v-if="afterLabel" class="twentytwenty-after-label">{{afterLabel}}</div>
+      </div>
+      <div class="twentytwenty-handle"
+           v-bind:style="handleStyle">
+      </div>
     </div>
-    <div class="twentytwenty-handle"
-         v-bind:style="handleStyle">
-    </div>
-  </div>
+    <figcaption v-if="caption">
+      {{caption}}
+    </figcaption>
+  </figure>
 </template>
 
 <script>
@@ -45,6 +50,9 @@
       },
       afterLabel: {
         type: String
+      },
+      caption: {
+          type: String
       },
       offset: {
         type: [String, Number],
@@ -141,6 +149,7 @@
     overflow: hidden;
     box-sizing: content-box;
     border-radius: 6px;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.1), -3px 2px 6px rgba(0,0,0,0.1);
   }
   .twentytwenty-container img {
     max-width: 100%;
@@ -227,5 +236,13 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 10px solid white;
+  }
+  figcaption {
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-family: 'Volkhov', Serif;
+    color: $color-main_dark;
+    line-height: 1.2;
   }
 </style>
