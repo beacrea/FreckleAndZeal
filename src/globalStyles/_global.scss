@@ -13,6 +13,13 @@
 
 
 // ------------
+// Helper Vars
+// ------------
+$common_borderRadius: 4px;
+
+
+
+// ------------
 // COLORS VARS
 // ------------
 $color-brand_mainColor_base: #FE6169;
@@ -69,4 +76,15 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+
+
+
+// ------------
+// Images
+// ------------
+img {
+  max-width: 100%;
+  border-radius: $common_borderRadius;
 }
