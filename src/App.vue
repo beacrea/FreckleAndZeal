@@ -4,9 +4,9 @@
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
       <h1>{{ heading }}</h1>
       <h2>{{ subheading }}</h2>
-      <ImgComp before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" />
+      <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" />
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
-      <ImgComp before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" />
+      <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" />
 
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
 
@@ -59,6 +59,10 @@
       width: $size;
       max-width: 100%;
     }
+    .imgComp {
+      margin-bottom: 1.6rem;
+      box-shadow: 6px 6px 10px rgba(0,0,0,0.1), -6px 4px 8px rgba(0,0,0,0.1);
+    }
   }
 
   @media screen and (min-width: 76.8rem) {
@@ -66,7 +70,7 @@
     #app {
       .container {
         margin: 0 auto;
-        max-width: 60rem;
+        max-width: $common_siteMaxWidth;
       }
     }
   }
