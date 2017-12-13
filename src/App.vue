@@ -78,6 +78,8 @@
       h1 {
         color: $color-main_light;
         text-align: center;
+        line-height: 1;
+        margin-bottom: 0;
       }
     }
   }
