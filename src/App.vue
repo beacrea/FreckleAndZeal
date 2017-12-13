@@ -4,12 +4,12 @@
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
       <h1>{{ heading }}</h1>
       <h2>{{ subheading }}</h2>
-      <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, skin  smoothing" />
+      <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, & skin smoothing" />
 
       <h3>Your camera is just a beginning.</h3>
-      <p>In today's digital landscape, shooting digital RAWs can bring out the best in photos, often when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds of shots to pick through and hours of refinement. We help you focus on catching those perfect moments and not the development later on.</p>
+      <p>Shooting digital RAWs can bring out the best in photos, even when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds of shots to pick through and hours of refinement. We help you focus on catching those perfect moments and not the development later on.</p>
 
-      <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, skin smoothing" />
+      <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, & skin smoothing" />
 
       <h3>An extension of your craft.</h3>
       <p>Our services extend the capacity of your studio, letting you take on more projects and improve your turn-around, all without compromising quality.</p>
