@@ -3,7 +3,6 @@
   "description": "The homepage of Freckle & Zeal",
   "version": "1.0.0",
   "author": "Coty Beasley <coty@freckleandzeal.com>>",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
