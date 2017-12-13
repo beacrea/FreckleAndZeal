@@ -61,7 +61,7 @@
     }
     .imgComp {
       margin-bottom: 1.6rem;
-      box-shadow: 6px 6px 10px rgba(0,0,0,0.1), -6px 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 3px 2px 5px rgba(0,0,0,0.1), -3px 2px 6px rgba(0,0,0,0.1);
     }
   }
 
