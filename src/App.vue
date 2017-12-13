@@ -23,8 +23,8 @@
     components: {ImgComp},
     data () {
       return {
-        heading: 'Hello there!',
-        subheading: 'Welcome to our super cool website',
+        heading: 'Post-processing services.',
+        subheading: 'Photo-editing, manipulation, & restoration',
         imgs_beforeafter: this.importAll(require.context('../static/before_after/', false, /\.(png|jpe?g|svg)$/)),
         imgs_dir: '/dist'
       }
@@ -54,10 +54,15 @@
       }
     }
     .logo {
+      // local vars
       $size: 12rem;
+
+      // styles
       height: $size;
       width: $size;
       max-width: 100%;
+      margin-bottom: 1.6rem;
+
     }
     .imgComp {
       margin-bottom: 1.6rem;
