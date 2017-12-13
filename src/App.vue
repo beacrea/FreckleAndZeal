@@ -12,7 +12,7 @@
       <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, skin smoothing" />
 
       <h3>An extension of your craft.</h3>
-      <p>Our services extend the capacity of your studio, letting you take on more projects and improve your turn-around, all without compromising the quality you're known for.</p>
+      <p>Our services extend the capacity of your studio, letting you take on more projects and improve your turn-around, all without compromising quality.</p>
     </div>
     <footer>
       <h1>Contact</h1>
