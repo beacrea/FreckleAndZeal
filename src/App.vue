@@ -6,7 +6,7 @@
       <h2>{{ subheading }}</h2>
       <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, skin  smoothing" />
 
-      <h3>The camera is just the beginning.</h3>
+      <h3>Your camera is just a beginning.</h3>
       <p>In today's digital landscape, shooting digital RAWs can bring out the best in photos, often when the shoot itself was less-than-ideal. When photographers get back to the studio, they have hundreds of shots to pick through and hours of refinement. We help you focus on catching those perfect moments and not the development later on.</p>
 
       <ImgComp class="imgComp" before="/dist/portrait2--before.jpg" after="/dist/portrait2--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of color grading, global lighting, slimming, skin smoothing" />
