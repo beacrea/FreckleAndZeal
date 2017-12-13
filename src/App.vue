@@ -4,9 +4,9 @@
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
       <h1>{{ heading }}</h1>
       <h2>{{ subheading }}</h2>
-      <ImgComp before="../static/before_after/example1_before.jpg" after="../static/before_after/example1_after.jpg" beforeLabel="Before" afterLabel="After" />
+      <ImgComp before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" />
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
-      <ImgComp before="../static/before_after/example2_before.jpg" after="../static/before_after/example2_after.jpg" beforeLabel="Before" afterLabel="After" />
+      <ImgComp before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" />
 
       <p>Give attitude plan steps for world domination so lick the other cats. Sleep nap stretch, forpooping rainbow while flying in a toasted bread costume in space, my left donut is missing, as is my right so purr while eating, yet groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked!</p>
 
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+  // Import photo comparison component
   import ImgComp from './components/PhotoComparison';
 
   export default {
@@ -23,7 +24,17 @@
     data () {
       return {
         heading: 'Hello there!',
-        subheading: 'Welcome to our super cool website'
+        subheading: 'Welcome to our super cool website',
+        imgs_beforeafter: this.importAll(require.context('../static/before_after/', false, /\.(png|jpe?g|svg)$/)),
+        imgs_dir: '/dist'
+      }
+    },
+    created: function() {
+
+    },
+    methods: {
+      importAll: function (r) {
+        return r.keys().map(r);
       }
     }
   }
