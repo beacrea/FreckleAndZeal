@@ -13,9 +13,20 @@
 
       <h3>An extension of your craft.</h3>
       <p>Our services extend the capacity of your studio, letting you take on more projects and improve your turn-around, all without compromising quality.</p>
+
+      <h3>Not a photographer, but need help?</h3>
+      <p>We offer private services as well for individuals.</p>
+      <ul>
+        <li>Family photo manipulation</li>
+        <li>Historically distressed photos</li>
+        <li>Wedding photography improvements</li>
+        <li>And more!</li>
+      </ul>
+      <p class="cta_prompt">Contact us  below for more information.</p>
     </div>
     <footer>
       <h1>Contact</h1>
+      <p>We service clients all over the world, but have a particular soft spot for those in Kansas City and San Francisco &#10084;.</p>
     </footer>
   </div>
 </template>
@@ -74,13 +85,22 @@
     footer {
       margin-top: 6.4rem;
       background: $color-brand_mainColor_base;
-      padding: $common_padding;
+      padding: $common_padding*2 $common_padding;
+      text-align: center;
       h1 {
         color: $color-main_light;
         text-align: center;
         line-height: 1;
         margin-bottom: 0;
       }
+      p {
+        color: rgba(white, 0.8);
+      }
+    }
+    .cta_prompt {
+      margin-top: 1rem;
+      font-size: 2rem;
+      color: $color-brand_mainColor_base;
     }
   }
 

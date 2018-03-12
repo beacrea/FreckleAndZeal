@@ -104,3 +104,19 @@ img {
   max-width: 100%;
   border-radius: $common_borderRadius;
 }
+
+
+
+
+// ------------
+// Lists
+// ------------
+ul {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  list-style-type: circle;
+  max-width: $common_siteMaxWidth/2.5;
+  margin: 0 auto;
+  text-align: left;
+  opacity: 0.75;
+}
