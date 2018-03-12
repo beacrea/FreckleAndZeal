@@ -109,6 +109,17 @@ img {
 
 
 // ------------
+// Links
+// ------------
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+// ------------
 // Lists
 // ------------
 ul {

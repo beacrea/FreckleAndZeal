@@ -24,10 +24,10 @@
       </ul>
       <p class="cta_prompt">Contact us  below for more information.</p>
     </div>
-    <footer>
-      <h1>Contact</h1>
+    <a class="footer" v-bind:href="bindEmail()" target="_blank">
+      <h1>Click to Contact Us</h1>
       <p>We service clients all over the world, but have a particular soft spot for those in Kansas City and San Francisco &#10084;.</p>
-    </footer>
+    </a>
   </div>
 </template>
 
@@ -40,17 +40,18 @@
     data () {
       return {
         heading: 'Post-processing services.',
+        contactEmail: 'emaildomain',
         subheading: 'Photo-editing, manipulation, & restoration',
         imgs_beforeafter: this.importAll(require.context('../static/before_after/', false, /\.(png|jpe?g|svg)$/)),
         imgs_dir: '/dist'
       }
     },
-    created: function() {
-
+    mounted: function() {
+      this.contactEmail = 'hello@freckleandzeal.com'
     },
     methods: {
-      importAll: function (r) {
-        return r.keys().map(r);
+      bindEmail: function () {
+        return 'mailto:' + this.contactEmail;
       }
     }
   }
@@ -82,16 +83,23 @@
     .imgComp {
       margin: 3.2rem 0;
     }
-    footer {
+    .footer {
+      display: block;
       margin-top: 6.4rem;
       background: $color-brand_mainColor_base;
       padding: $common_padding*2 $common_padding;
       text-align: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        background: darken($color-brand_mainColor_base, 10%);
+      }
       h1 {
         color: $color-main_light;
         text-align: center;
         line-height: 1;
         margin-bottom: 0;
+        font-size: 4.5rem;
       }
       p {
         color: rgba(white, 0.8);
