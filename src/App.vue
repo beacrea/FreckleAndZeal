@@ -2,8 +2,8 @@
   <div id="app">
     <div class="container">
       <img src="../static/logo.svg" alt="Freckle and Zeal logo" class="logo">
-      <h1>{{ heading }}</h1>
-      <h2>{{ subheading }}</h2>
+      <h1>Post-processing services.</h1>
+      <h2>Photo-editing, manipulation, & restoration</h2>
       <ImgComp class="imgComp" before="/dist/portrait1--before.jpg" after="/dist/portrait1--after.jpg" beforeLabel="Before" afterLabel="After" caption="Example of sky painting, color grading, global lighting, slimming, & skin smoothing" />
 
       <h3>Your camera is just a beginning.</h3>
@@ -24,7 +24,7 @@
       </ul>
       <p class="cta_prompt">Contact us  below for more information.</p>
     </div>
-    <a class="footer" v-bind:href="bindEmail()" target="_blank">
+    <a class="footer" :href="contactEmail" target="_blank">
       <h1>Click to Contact Us</h1>
       <p>We service clients all over the world, but have a particular soft spot for those in Kansas City and San Francisco &#10084;.</p>
     </a>
@@ -39,20 +39,11 @@
     components: {ImgComp},
     data () {
       return {
-        heading: 'Post-processing services.',
-        contactEmail: 'emaildomain',
-        subheading: 'Photo-editing, manipulation, & restoration',
-        imgs_beforeafter: this.importAll(require.context('../static/before_after/', false, /\.(png|jpe?g|svg)$/)),
-        imgs_dir: '/dist'
+        contactEmail: 'emaildomain'
       }
     },
     mounted: function() {
-      this.contactEmail = 'hello@freckleandzeal.com'
-    },
-    methods: {
-      bindEmail: function () {
-        return 'mailto:' + this.contactEmail;
-      }
+      this.contactEmail = 'mailto:' + 'hello@freckleandzeal.com'
     }
   }
 </script>
